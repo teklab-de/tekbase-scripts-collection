@@ -6,7 +6,7 @@
 ## Installation
 
 ### Start/Stop routines
-Copy the "include" directory into /home/skripte. Change the name "minecraft", if you use another game shortcut for Minecraft. You can use symlinks for other Minecraft-based entries in your game list. Then you only need to insert the files once.
+Copy the "includes" directory into /home/skripte. Change the name "minecraft", if you use another game shortcut for Minecraft. You can use symlinks for other Minecraft-based entries in your game list. Then you only need to insert the files once.
   
 ## License
 Copyright (c) TekLab.de. Code released under the [GPL v3.0 License](http://https://gitgem.com/TekLab/tekbase-mytekbase-examples/src/branch/master/LICENSE).
