@@ -8,9 +8,13 @@
 
 VAR_A=$3
 
-screen -p 0 -S server$VAR_A-X -X eval 'stuff "say SERVER shuts down in 10 seconds."\015'
-screen -p 0 -S server$VAR_A-X -X eval 'stuff "save-all"\015'
+if screen -list | grep -q "server$VAR_A-X"; then
+
+screen -p 0 -S server$VAR_A-X -X eval 'stuff "say SERVER shuts down in 10 seconds.\015"'
+screen -p 0 -S server$VAR_A-X -X eval 'stuff "save-all\015"'
 sleep 10
-screen -p 0 -S server$VAR_A-X -X eval 'stuff "stop"\015'
+screen -p 0 -S server$VAR_A-X -X eval 'stuff "stop\015"'
+
+fi
 
 exit 0
