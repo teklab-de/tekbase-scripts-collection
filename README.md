@@ -12,4 +12,4 @@ TekBASE is a server management software for clans, communities and service provi
 Copy the "includes" directory into /home/skripte. Change the name "minecraft", if you use another game shortcut for Minecraft. You can use symlinks for other Minecraft-based entries in your game list. Then you only need to insert the files once.
   
 ## License
-Copyright (c) TekLab.de. Code released under the [GNU AGPLv3 License](https://github.com/teklab-de/tekbase-all-in-one-start/blob/master/LICENSE). The use by other commercial control panel providers is explicitly prohibited.
+Copyright (c) TekLab.de. Code released under the [GNU AGPLv3 License](https://github.com/teklab-de/tekbase-scripts-collection/blob/master/LICENSE). The use by other commercial control panel providers is explicitly prohibited.
