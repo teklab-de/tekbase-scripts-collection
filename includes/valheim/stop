@@ -9,9 +9,7 @@
 VAR_A=$3
 
 if screen -list | grep -q "server$VAR_A-X"; then
-  kill -2 $(ps aux | grep -v grep | grep -i "server$VAR_A-X")
-  sleep 10
-  screen -wipe
+    screen -p 0 -S server$VAR_A-X -X stuff $'\003'
 fi
 
 exit 0
