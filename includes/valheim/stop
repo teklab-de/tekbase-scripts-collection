@@ -1,0 +1,17 @@
+#! /bin/bash
+
+# TekBASE - Server Control Panel
+# Copyright since 2005 by TekLab
+# Christian Frankenstein
+# Website: www.teklab.de
+#          www.teklab.us
+
+VAR_A=$3
+
+if screen -list | grep -q "server$VAR_A-X"; then
+  kill -2 $(ps aux | grep -v grep | grep -i "server$VAR_A-X")
+  sleep 10
+  screen -wipe
+fi
+
+exit 0
